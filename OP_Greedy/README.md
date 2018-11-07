@@ -4,14 +4,6 @@ Greedy aproximation to solve the OP
 
 Recall the MIP formulation:
 
-$$Max \sum_{p=1}^{P}\sum_{i=2}^{N-1}S_i y_ip$$
-$$\sum_{p=1}^{P}\sum_{j=2}^{N}x_{1jp} = \sum_{p=1}^{P}\sum_{i=1}^{N-1} x_{iNp} = P$$
-$$\sum_{p=1}^{P}y_{kp} \leq 1, \forall k = 2,...,N-1$$
-$$\sum_{i=1}^{N-1}x_{ikp}=\sum_{j=2}^{N}x_{kjp}=y_{kp},~\forall k=2,...,N-1,~\forall p=1,...,1$$
-$$\sum_{i=1}^{N-1}\sum_{j=2}^{N}t_{ij}x_{ijp} \leq T_{max}$$
-$$2 \leq u_{ip} \leq N,~\forall i=2,...,N,~\forall p=1,...,P$$
-$$u_{ip}-u_{jp}+ \leq (N-1)(1-x_{ijp}),~\forall i,j=2,...,N,~\forall p=1,...,P$$
-$$x_{ijp},y_{ip} \in \{0,1\},~\forall i,j=1,...,N,~\forall p =1,...,P$$
-
+[<img src="http://www.sciweavers.org/tex2img.php?eq=Max%20%5Csum_%7Bp%3D1%7D%5E%7BP%7D%5Csum_%7Bi%3D2%7D%5E%7BN-1%7DS_i%20y_ip%20%5C%5C%20%5Csum_%7Bp%3D1%7D%5E%7BP%7D%5Csum_%7Bj%3D2%7D%5E%7BN%7Dx_%7B1jp%7D%20%3D%20%5Csum_%7Bp%3D1%7D%5E%7BP%7D%5Csum_%7Bi%3D1%7D%5E%7BN-1%7D%20x_%7BiNp%7D%20%3D%20P%20%5C%5C%0A%5Csum_%7Bp%3D1%7D%5E%7BP%7Dy_%7Bkp%7D%20%5Cleq%201%2C%20%5Cforall%20k%20%3D%202%2C...%2CN-1%24%24%5C%5C%20%5Csum_%7Bi%3D1%7D%5E%7BN%7Dx_%7Bikp%7D%3D%5Csum_%7Bj%3D2%7D%5E%7BN%7Dx_%7Bkjp%7D%3Dy_%7Bkp%7D%2C%5Cforall%20k%3D2%2C...%2CN-1%2C%5Cforall%20p%3D1%2C...%2CP%20%5C%5C%0A%5Csum_%7Bi%3D1%7D%5E%7BN-1%7D%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7Bij%7Dx_%7Bijp%7D%20%5Cleq%20T_%7Bmax%7D%5C%5C%202%20%5Cleq%20u_%7Bip%7D%20%5Cleq%20N%2C%5Cforall%20i%3D2%2C...%2CN%2C%5Cforall%20p%3D1%2C...%2CP%5C%5C%0Au_%7Bip%7D-u_%7Bjp%7D%2B%20%5Cleq%20%28N-1%29%281-x_%7Bijp%7D%29%2C%5Cforall%20i%2Cj%3D2%2C...%2CN%2C%5Cforall%20p%3D1%2C...%2CP%0A%5C%5Cx_%7Bijp%7D%2Cy_%7Bip%7D%20%5Cin%20%7B0%2C1%7D%2C%5Cforall%20i%2Cj%3D1%2C...%2CN%2C%5Cforall%20p%20%3D1%2C...%2CP&bc=White&fc=Black&im=jpg&fs=12&ff=txfonts&edit=0" align="center" border="0" alt="Max \sum_{p=1}^{P}\sum_{i=2}^{N-1}S_i y_ip \\ \sum_{p=1}^{P}\sum_{j=2}^{N}x_{1jp} = \sum_{p=1}^{P}\sum_{i=1}^{N-1} x_{iNp} = P \\\sum_{p=1}^{P}y_{kp} \leq 1, \forall k = 2,...,N-1$$\\ \sum_{i=1}^{N}x_{ikp}=\sum_{j=2}^{N}x_{kjp}=y_{kp},\forall k=2,...,N-1,\forall p=1,...,P \\\sum_{i=1}^{N-1}\sum_{j=2}^{N}t_{ij}x_{ijp} \leq T_{max}\\ 2 \leq u_{ip} \leq N,\forall i=2,...,N,\forall p=1,...,P\\u_{ip}-u_{jp}+ \leq (N-1)(1-x_{ijp}),\forall i,j=2,...,N,\forall p=1,...,P\\x_{ijp},y_{ip} \in {0,1},\forall i,j=1,...,N,\forall p =1,...,P" width="396" height="354" />]
 
 (Pagina para instancias de OP)[https://www.mech.kuleuven.be/en/cib/op#section-2]
